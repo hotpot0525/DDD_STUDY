@@ -12,5 +12,10 @@ public class Hp implements CharactorParameter{
 	public int getValue() {
 		return hp;
 	}
+	
+	@Override
+	public String toString() {
+		return "HP:"+hp;
+	}
 
 }

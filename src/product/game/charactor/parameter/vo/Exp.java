@@ -10,5 +10,10 @@ public class Exp implements CharactorParameter{
 	public int getValue() {
 		return exp;
 	}
+	
+	@Override
+	public String toString() {
+		return "経験値:"+exp;
+	}
 
 }

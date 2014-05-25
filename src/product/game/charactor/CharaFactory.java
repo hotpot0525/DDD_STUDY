@@ -18,16 +18,33 @@ import product.game.charactor.parameter.vo.Stamina;
 public class CharaFactory {
 
 	public static Charactor createCharactor() {
-		ArrayList<CharactorParameter> status = new ArrayList<CharactorParameter>();
-		status.add(new Hp(100));
-		status.add(new Critical(100));
-		status.add(new Dex(100));
-		status.add(new Exp(100));
-		status.add(new Level(100));
-		status.add(new Power(100));
-		status.add(new Range(100));
-		status.add(new Stamina(100));
+		ArrayList<CharactorParameter> status = baseParam(new ArrayList<CharactorParameter>(), 100);
 		return new Charactor(new Status(status), new Warrior(), new Beginner());
 	}
+
+	private static ArrayList<CharactorParameter> baseParam(ArrayList<CharactorParameter> status, int totalPoint) {
+		int level = 1;
+		int exp = 0;
+		int hp = (int) (Math.random()*totalPoint+1)+1;totalPoint-=hp;
+		int stamina = (int) (Math.random()*totalPoint)+1;totalPoint-=stamina;
+		int power = (int) (Math.random()*totalPoint)+1;totalPoint-=power;
+		int dex = (int) (Math.random()*totalPoint)+1;totalPoint-=dex;
+		int cri = (int) (Math.random()*totalPoint)+1;totalPoint-=cri;
+		int range = 1;
+
+		
+		status.add(new Level(level));
+		status.add(new Exp(exp));		
+		status.add(new Hp(hp));
+		status.add(new Stamina(stamina));
+		status.add(new Power(power));
+		status.add(new Dex(dex));
+		status.add(new Critical(cri));
+		status.add(new Range(range));
+		
+		return status;
+	}
+	
+
 
 }

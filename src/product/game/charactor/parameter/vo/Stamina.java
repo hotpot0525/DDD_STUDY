@@ -13,5 +13,10 @@ public class Stamina implements CharactorParameter{
 		return stamina;
 	}
 	
+	@Override
+	public String toString() {
+		return "スタミナ:"+stamina;
+	}
+	
 
 }

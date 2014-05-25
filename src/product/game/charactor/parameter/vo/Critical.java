@@ -12,5 +12,10 @@ public class Critical implements CharactorParameter{
 	public int getValue() {
 		return critical;
 	}
+	
+	@Override
+	public String toString() {
+		return "クリティカル:"+critical;
+	}
 
 }

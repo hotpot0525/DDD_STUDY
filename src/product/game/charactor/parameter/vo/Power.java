@@ -11,4 +11,8 @@ public class Power implements CharactorParameter{
 		return power;
 	}
 
+	@Override
+	public String toString() {
+		return "力:"+power;
+	}
 }

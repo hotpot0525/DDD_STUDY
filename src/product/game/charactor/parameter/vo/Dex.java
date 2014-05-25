@@ -13,5 +13,10 @@ public class Dex implements CharactorParameter{
 
 		return dex;
 	}
+	
+	@Override
+	public String toString() {
+		return "素早さ:"+dex;
+	}
 
 }

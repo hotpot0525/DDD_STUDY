@@ -13,4 +13,9 @@ public class Range implements CharactorParameter{
 		return range;
 	}
 
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "範囲:"+range;
+	}
 }

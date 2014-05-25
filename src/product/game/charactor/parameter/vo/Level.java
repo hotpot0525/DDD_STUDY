@@ -12,5 +12,10 @@ public class Level implements CharactorParameter{
 	public int getValue() {
 		return level;
 	}
+	
+	@Override
+	public String toString() {
+		return "レベル:"+level;
+	}
 
 }

@@ -29,6 +29,7 @@ public class CharactorTest {
 		assertEquals("８項目", 8, paramList.get().size());
 		for(CharactorParameter param : paramList.get()){
 			checkNotNull(param);
+			System.out.println(param.toString());
 		}
 	}
 	
