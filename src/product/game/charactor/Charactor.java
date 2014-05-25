@@ -1,4 +1,4 @@
-package product.game.charactor.vo;
+package product.game.charactor;
 
 import java.util.ArrayList;
 
@@ -12,7 +12,7 @@ public class Charactor {
 	// キャラクターステータス
 	private Status status;
 	
-	public Charactor(Status status){
+	Charactor(Status status){
 		this.status = status;
 	}
 	
