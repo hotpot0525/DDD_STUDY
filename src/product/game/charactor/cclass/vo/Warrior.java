@@ -1,6 +1,6 @@
 package product.game.charactor.cclass.vo;
 
 
-public class Warrior {
+public class Warrior implements Career{
 
 }

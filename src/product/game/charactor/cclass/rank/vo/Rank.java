@@ -1,5 +1,5 @@
 package product.game.charactor.cclass.rank.vo;
 
-public class Beginner implements Rank{
+public interface Rank {
 
 }

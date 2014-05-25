@@ -1,5 +1,5 @@
 package product.game.charactor.cclass.vo;
 
-public class Hanter implements Career{
+public interface Career {
 
 }

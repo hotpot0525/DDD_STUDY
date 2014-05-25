@@ -30,7 +30,6 @@ public class CharactorTest {
 		for(CharactorParameter param : paramList.get()){
 			checkNotNull(param);
 		}
-
 	}
 	
 	

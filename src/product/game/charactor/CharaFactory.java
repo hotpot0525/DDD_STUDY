@@ -2,6 +2,8 @@ package product.game.charactor;
 
 import java.util.ArrayList;
 
+import product.game.charactor.cclass.rank.vo.Beginner;
+import product.game.charactor.cclass.vo.Warrior;
 import product.game.charactor.parameter.Status;
 import product.game.charactor.parameter.vo.CharactorParameter;
 import product.game.charactor.parameter.vo.Critical;
@@ -25,7 +27,7 @@ public class CharaFactory {
 		status.add(new Power(100));
 		status.add(new Range(100));
 		status.add(new Stamina(100));
-		return new Charactor(new Status(status));
+		return new Charactor(new Status(status), new Warrior(), new Beginner());
 	}
 
 }

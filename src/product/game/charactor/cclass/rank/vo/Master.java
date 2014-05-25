@@ -1,5 +1,5 @@
 package product.game.charactor.cclass.rank.vo;
 
-public class Master {
+public class Master implements Rank{
 
 }

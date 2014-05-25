@@ -1,5 +1,5 @@
 package product.game.charactor.cclass.vo;
 
-public class Magician {
+public class Magician implements Career{
 
 }

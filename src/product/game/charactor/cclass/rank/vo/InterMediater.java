@@ -1,5 +1,5 @@
 package product.game.charactor.cclass.rank.vo;
 
-public class InterMediater {
+public class InterMediater implements Rank{
 
 }
